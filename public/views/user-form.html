@@ -1,0 +1,24 @@
+<h1>Form User View</h1>
+
+<p>{{ header }}</p>
+
+<div class="form-group col-md-6">
+  <label>First Name</label>
+  <input type="text" ng-model="user.firstName" class="form-control" placeholder="First Name" />
+</div>
+
+<div class="form-group col-md-6">
+  <label>Last Name</label>
+  <input type="text" ng-model="user.lastName" class="form-control" placeholder="Last Name" />
+</div>
+
+<div class="form-group col-md-12">
+  <label>Email</label>
+  <input type="text" ng-model="user.email" class="form-control" placeholder="Email" />
+</div>
+
+<!-- <button ng-show="submitButton" ng-click="addUser()" class="btn btn-primary">Submit</button>
+<button ng-show="!submitButton" ng-click="updateUser()" class="btn btn-success">Update</button> -->
+
+<button ng-click="addUser()" ng-show="submitButton"class="btn btn-primary">Submit</button>
+<button ng-click="saveUser()" ng-show="!submitButton"class="btn btn-success">Update</button>
