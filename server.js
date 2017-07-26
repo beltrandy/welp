@@ -8,7 +8,7 @@ var app = express();
 
 // connect to MongoDB with mongoose
 require('./db/mongoose.js')
-
+require('dotenv').load();
 var user = require("./routes/user");
 // require place
 const port = process.env.PORT || 3000;
